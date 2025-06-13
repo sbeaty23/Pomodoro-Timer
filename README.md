@@ -9,7 +9,7 @@ I built this project because of the many people I have seen studying for long pe
 [FreeCodeCamp Front End Development Libraries](https://www.freecodecamp.org/learn/front-end-development-libraries/)
 
 ### References Used
-[W3 Schools HTML](https://www.w3schools.com/html/default.asp)
-[W3 Schools CSS](https://www.w3schools.com/css/default.asp)
-[W3 Schools SASS](https://www.w3schools.com/sass/default.php)
-[SASS Official Website](https://sass-lang.com/documentation/)
+[W3 Schools HTML](https://www.w3schools.com/html/default.asp)  
+[W3 Schools CSS](https://www.w3schools.com/css/default.asp)  
+[W3 Schools SASS](https://www.w3schools.com/sass/default.php)  
+[SASS Official Website](https://sass-lang.com/documentation/)  
