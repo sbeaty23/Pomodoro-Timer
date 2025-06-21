@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    position:fixed;
     background-color: $c1;
     width: 100%;
 }
@@ -18,37 +17,44 @@
 
 @mixin format-times($p1,$p2){
     display: flex;
-    position: absolute;
-    top: 30%;
-    width: 100%;
     text-align: center;
     font-size: 18px;
-    left: $p1;
-    right: $p2;
 }
 
 body{
-    text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
+  
+#big-box{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
 
 #timer-box{
     display: flex;
-    position: absolute;
-    top: 50%;
+    position: relative;
     width: 100%;
     text-align: center;
     font-size: 18px;
+    margin: auto 0px;
 }
 
 
 #session-time{
-    @include format-times(20em,25em);
+    @include format-times(20%,25%);
+    margin: auto 0px auto auto;
 }
 
 #break-time{
-    @include format-times(45em, 50em);
+    @include format-times(15%, 50%);
+    margin: auto auto auto 0px;
 }
 #menu-options>nav>ul {
   top: 0;
@@ -56,8 +62,7 @@ body{
 }
 
 #menu-options>nav>ul>li {
-  @include format-nav-b(white,14px,16px)
-  
+  @include format-nav-b(white,14px,16px) 
 }
 
 #about-section>nav>ul {
@@ -70,16 +75,12 @@ body{
   
 }
 
-@mixin margin_format($m1,$m2,$m3: null,$m4:null){
-    margin: $m1 $m2 $m3 $m4;
-}
-
 #mins{
-    @include margin-format(auto, 0px, auto, auto);
+    margin:auto 0px auto auto
 }
 #colon{
-    @include margin-format(auto, 0px);
+    margin: auto 0px
 }
 #secs{
-    @include margin-format(auto, auto, auto, 0px);
+    margin: auto auto auto 0px;
 }
